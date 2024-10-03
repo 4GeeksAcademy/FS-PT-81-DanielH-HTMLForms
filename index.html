@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormHTML5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+    <div class="container border border-secondary mt-3 rounded">
+        <div class="row border-bottom border-secondary">
+            <div class="col-12 p-0 bg-secondary-subtle">
+                <h2 class="m-3">Payment form Example</h2>
+            </div>
+        </div>
+        <div class="row">
+            <form class="row m-0 p-0 needs-validation">
+                <div class="col-12">
+                    <div class="alert alert-danger mt-3" role="alert">
+                        Some fields are missing
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <label for="cardNumber" class="form-label">Card</label>
+                    <input type="number" class="form-control" id="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+                </div>
+                <div class="col-md-3">
+                    <label for="cvcNumber" class="form-label">CVC #</label>
+                    <input type="number" class="form-control" id="cvcNumber" placeholder="000">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="amount" class="form-label col-12">Amount</label>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="amount">$</label>
+                        <input type="number" class="form-control" id="amount" placeholder="Amount">
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Frist Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your name">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Your last name">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="City">
+                </div>
+                <div class="col-md-3">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Pick a State</option>
+                        <option>Bogota</option>
+                        <option>Bucaramanga</option>
+                        <option>Medellin</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="postalCode" class="form-label">Postal Code</label>
+                    <input type="text" class="form-control" id="postalCode" placeholder="0000-000">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCardType" class="form-label col-12">We accept:</label>
+                    <div class="col-md-6 bg-secondary d-flex justify-content-between p-2 rounded">
+                        <div class="form-check-inline m-0">
+                            <input type="radio" class="form-check-input" id="mastercard">
+                            <label for="mastercard" class="form-check-label fs-5">
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                            </label>
+                        </div>
+                        <div class="form-check-inline m-0">
+                            <input type="radio" class="form-check-input" id="mastercard">
+                            <label for="mastercard" class="form-check-label fs-5">
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                            </label>
+                        </div>
+                        <div class="form-check-inline m-0">
+                            <input type="radio" class="form-check-input" id="mastercard">
+                            <label for="mastercard" class="form-check-label fs-5">
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                            </label>
+                        </div>
+                        <div class="form-check-inline m-0">
+                            <input type="radio" class="form-check-input" id="mastercard">
+                            <label for="mastercard" class="form-check-label fs-5">
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="comment" class="form-label">Comments</label>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="comment" style="height: 100px"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="row border-top border-secondary">
+             <div class="col-12 p-2 bg-secondary-subtle d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary me-2">Cancel</button>
+                <button type="button" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
